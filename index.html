@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji Slot Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="arcade-cabinet">
+    <header class="cabinet-header">
+      <h1>EMOJI SLOTS</h1>
+      <div class="score-display">Score: <span id="score-val">100</span></div>
+    </header>
+    
+    <main class="machine-body">
+      <div class="reels-container">
+        <div class="reel" id="reel-1">🍒</div>
+        <div class="reel" id="reel-2">🍋</div>
+        <div class="reel" id="reel-3">🍉</div>
+      </div>
+
+      <!-- Payout Rules Legend -->
+      <section class="rules-card">
+        <h3>Payout Rules</h3>
+        <ul>
+          <li><span>All Same:</span> <strong>+100 pts</strong></li>
+          <li><span>All Yellow:</span> <strong>+10 pts</strong></li>
+          <li><span>All Fruits:</span> <strong>+5 pts</strong></li>
+          <li><span>2 Same:</span> <strong>+10 pts</strong></li>
+        </ul>
+      </section>
+
+      <div id="message-display" class="message">Press Spin to Play! (Cost: 10 pts)</div>
+    </main>
+
+    <footer class="cabinet-footer">
+      <button id="spin-btn" class="spin-btn">SPIN (-10 pts)</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
